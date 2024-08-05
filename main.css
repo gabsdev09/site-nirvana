@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+header {
+    padding: 12px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.band-photo {
+    margin-right: 20px;
+    height: 180px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.band-photo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.albums-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
+    margin-top: 8px;
+}
+
+.albums-list li {
+    display: inline-block;
+}
+
+.albums-list img {
+    height: 160px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.albums-list img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    margin-bottom: 12px;
+    font-size: 2em;
+    color: #333;
+}
+
+section p {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+.social-links img {
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+form textarea {
+    resize: none;
+    height: 160px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+input:focus, textarea:focus {
+    outline-color: #333;
+    border-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+}
